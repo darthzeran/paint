@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Collabarative Canvas!</title>
+    <title>Multi-Paint!</title>
     <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
     <script src="libraries/p5.js" type="text/javascript"></script>
     <script src="libraries/p5.dom.js" type="text/javascript"></script>
@@ -11,10 +11,23 @@
 
     <style>
       body {
-        padding: 20px;
+        padding: 50px;
+		background-color:grey;
       }
+	  h3{
+	  text-align: center;
+	  color: white;
+	  }
+	  
     </style>
   </head>
   <body>
+  <embed src="MUSIC.mp3" autostart="true" loop="true"
+width="2" height="0">
+</embed>
+<noembed>
+<bgsound src="MUSIC.mp3" loop="infinite">
+</noembed>
+  <h3>You paint in white, they paint in blue.  First to take up the most space wins!</h3>
   </body>
 </html>

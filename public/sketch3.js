@@ -4,7 +4,7 @@ function setup(){
 	createCanvas(600,400);
 	background(51);
 	
-	socket = socket.io.connect('ec2-52-89-160-111.us-west-2.compute.amazonaws.com:3000');
+	socket = socket.io.connect('ec2-54-244-167-140.us-west-2.compute.amazonaws.com:3000');
 
 }
 

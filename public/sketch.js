@@ -1,16 +1,16 @@
 var socket;
 
 function setup() {
-  createCanvas(800, 550);
+  createCanvas(1400, 650);
   background(0);
   // Start a socket connection to the server
-  socket = io.connect('http://ec2-52-89-160-111.us-west-2.compute.amazonaws.com:3000');
+  socket = io.connect('http://ec2-54-244-167-140.us-west-2.compute.amazonaws.com:3000');
   socket.on('mouse', function(data) {
       console.log("Got: " + data.x + " " + data.y);
       // Draw a blue circle
       fill(0,0,255);
       noStroke();
-      ellipse(data.x, data.y, 20, 20);
+      ellipse(data.x, data.y, 40, 40);
     }
   );
 }
@@ -32,7 +32,7 @@ function mouseDragged() {
   // Draw some white circles
   fill(255);
   noStroke();
-  ellipse(mouseX,mouseY,20,20);
+  ellipse(mouseX,mouseY,40,40);
   // Send the mouse coordinates
   //sendmouse(mouseX,mouseY);
 }
